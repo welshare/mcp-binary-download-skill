@@ -1,4 +1,4 @@
-# Makefile for FHIR Questionnaire Skill Packaging
+# Makefile for Welshare Download Binary Resources Skill Packaging
 
 SKILL_NAME = welshare-download-binary-resources
 SKILL_FILE = $(SKILL_NAME).skill
@@ -12,15 +12,15 @@ all: package
 # Package the skill into a distributable .skill file
 package: clean
 	@echo "Packaging $(SKILL_NAME) skill..."
-	@cd $(SKILL_DIR) && zip -r ../$(SKILL_FILE) . \
-		-x "*.pyc" \
-		-x "*__pycache__*" \
-		-x "*.egg-info/*" \
-		-x ".venv/*" \
-		-x ".venv" \
-		-x ".DS_Store" \
-		-x "*.swp" \
-		-x "*~"
+	@zip -r $(SKILL_FILE) $(SKILL_DIR) \
+		-x "$(SKILL_DIR)/*.pyc" \
+		-x "$(SKILL_DIR)/*__pycache__*" \
+		-x "$(SKILL_DIR)/*.egg-info/*" \
+		-x "$(SKILL_DIR)/.venv/*" \
+		-x "$(SKILL_DIR)/.venv" \
+		-x "$(SKILL_DIR)/.DS_Store" \
+		-x "$(SKILL_DIR)/*.swp" \
+		-x "$(SKILL_DIR)/*~"
 	@echo "✓ Created $(SKILL_FILE)"
 	@echo "  Size: $$(du -h $(SKILL_FILE) | cut -f1)"
 
@@ -48,7 +48,7 @@ test-package:
 
 # Display help information
 help:
-	@echo "FHIR Questionnaire Skill - Build System"
+	@echo "Welshare Download Binary Resources Skill - Build System"
 	@echo ""
 	@echo "Targets:"
 	@echo "  make package       - Create the .skill package file (default)"

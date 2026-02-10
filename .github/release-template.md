@@ -16,20 +16,20 @@
 
 ## Installation
 
-Download `fhir-questionnaire.skill` below and install it in Claude Desktop or Claude Code.
+Download `welshare-download-binary-resources.skill` below and install it in Claude Desktop or Claude Code.
 
 ## Requirements
 
 - Claude Desktop or Claude Code
 - Network access to:
-  - `clinicaltables.nlm.nih.gov` (LOINC search)
-  - `tx.fhir.org` (FHIR terminology server)
+  - `wallet.welshare.app` (application domain)
+  - `staging.wallet.welshare.app` (staging environment)
 
 ## Quick Start
 
 After installation, the skill provides:
-- FHIR R4 Questionnaire creation with LOINC/SNOMED coding
-- LOINC term search and ValueSet discovery
-- Questionnaire validation against schema
+- Instructions for downloading protected binary resources from Welshare MCP
+- PDF text extraction using pdfplumber
+- Handling of temporary download URLs with expiry
 
-See the [README](https://github.com/welshare/questionnaire-skill) for full documentation.
+See the [README](https://github.com/welshare/mcp-download-skill) for full documentation.

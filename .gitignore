@@ -8,3 +8,6 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+
+welshare-download-binary-resources.skill
+.DS_Store

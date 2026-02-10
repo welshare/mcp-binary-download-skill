@@ -57,19 +57,14 @@ Follow [Semantic Versioning](https://semver.org/):
 - **MINOR** version (0.X.0): New features, backward compatible
 - **PATCH** version (0.0.X): Bug fixes, backward compatible
 
-Examples:
-- `v1.0.0` - Initial stable release
-- `v1.1.0` - Added new LOINC search capabilities
-- `v1.1.1` - Fixed validation bug
-
 ### Release Notes Template
 
 ```markdown
 ## What's New in vX.Y.Z
 
 ### Features
-- Added support for custom CodeSystems
-- Improved LOINC search with fuzzy matching
+- Added support for additional document types
+- Improved PDF text extraction accuracy
 
 ### Improvements
 - ...

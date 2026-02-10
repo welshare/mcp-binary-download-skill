@@ -2,6 +2,8 @@
 
 A Claude skill that instructs AI agents how to properly fetch protected binary user resources
 
+[![GitHub release](https://img.shields.io/github/v/release/welshare/mcp-binary-download-skill)](https://github.com/welshare/mcp-binary-download-skill/releases/tag/latest)
+
 ## What are Skills?
 
 Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. Rather than relying on Claude's general knowledge, skills provide domain-specific instructions and tools that make Claude consistently better at particular use cases.
@@ -12,14 +14,14 @@ Learn more: [Official Skills Repository](https://github.com/anthropics/skills/bl
 
 This skill requires whitelisted network access to:
 
-- `wallet.welshare.app` (the server that passes through)
-- `staging.wallet.welshare.app` (LOINC search)
+- `wallet.welshare.app` (the application domain)
+- `staging.wallet.welshare.app` (staging environment)
 
 ## Installation
 
 ### Quick Install
 
-1. **Download the latest release**: [fhir-questionnaire.skill](https://github.com/mcp-binary-download-skill/releases/latest/download/fhir-questionnaire.skill)
+1. **Download the latest release**: [welshare-download-binary-resources.skill](https://github.com/welshare/mcp-download-skill/releases/latest/download/welshare-download-binary-resources.skill)
 2. Install it in Claude Desktop or Claude Code
 
 ![Claude Skills](docs/claude.png)
