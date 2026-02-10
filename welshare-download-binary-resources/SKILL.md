@@ -1,5 +1,5 @@
 ---
-name: welshare-download-resources
+name: welshare-download-binary-resources
 description: "Downloading and extracting information from resource files (e.g. PDFs) retrieved by Welshare MCP tools"
 metadata:
   dependencies: python>=3.8

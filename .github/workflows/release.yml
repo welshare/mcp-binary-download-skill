@@ -1,0 +1,33 @@
+name: Build and Release Skill
+
+permissions:
+  contents: write
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build skill package
+        run: make package
+
+      - name: Upload skill artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: welshare-download-binary-resources
+          path: welshare-download-binary-resources.skill
+
+      - name: Attach to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: welshare-download-binary-resources.skill
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
