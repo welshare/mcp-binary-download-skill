@@ -21,14 +21,10 @@ This skill requires whitelisted network access to:
 
 ### Quick Install
 
-1. **Download the latest release**: [welshare-download-binary-resources.skill](https://github.com/welshare/mcp-download-skill/releases/latest/download/welshare-download-binary-resources.skill)
+1. **Download the latest release**: Visit the [Releases page](https://github.com/welshare/mcp-binary-download-skill/releases) to download the latest version
 2. Install it in Claude Desktop or Claude Code
 
-![Claude Skills](docs/claude.png)
-
-### Manual Download
-
-Visit the [Releases page](https://github.com/welshare/mcp-binary-download-skill/releases) to download a specific version.
+![Claude Skills](https://github.com/welshare/skill-questionnaire-builder/raw/main/docs/claude.png)
 
 ## Development & Distribution
 
